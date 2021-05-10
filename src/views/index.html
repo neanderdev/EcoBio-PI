@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-home" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+{% endblock styles %}
+
+
+{% block content %}
+    <div class="content">
+        <header>
+            <img src="/assets/logo.svg" alt="Logomarca">
+            <a href="/create-point">       
+                Cadastre um ponto de coleta
+                <span></span>
+            </a> 
+        </header>
+
+        <main>
+            <p>A Responsabilidade social e a presevação ambiental significa um compromisso com a vida.</p>
+            <p>E se caso quiser cadastrar um ponto de coleta clique em “<strong>Cadastre ponto</strong>”.</p>
+            <p>Ou econtre um ponto de coleta de animais, reciclagem e doações de roupas.</p>
+
+            <a href="/search-point"><span></span><strong>Pesquisar pontos</strong></a>
+        </main>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <!-- <script src="/scripts/index.js"></script> -->
+{% endblock scripts %}

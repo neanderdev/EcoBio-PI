@@ -1,0 +1,167 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.barra_superior {
+  width: 100%;
+  height: 180px;
+  border-radius: 0px 0px 50px 50px;
+  overflow: hidden;
+  background-color: #0e8730;
+}
+
+.imgdog {
+  width: 313px;
+  height: 231.79px;
+  left: 56px;
+  bottom: 75px;
+}
+
+#page-create-point {
+  /* width: 90%;
+    max-width: 1100px; */
+
+  background-color: #f0f0f5;
+
+  margin: 0 auto;
+}
+
+#page-create-point header {
+  margin-top: 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-create-point header a {
+  color: var(--title-color);
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+#page-create-point header a span {
+  margin-right: 16px;
+  background-image: url("/assets/arrow-left.svg");
+
+  display: flex;
+
+  width: 20px;
+  height: 24px;
+}
+
+form {
+  background-color: white;
+
+  margin: 80px auto;
+  padding: 64px;
+
+  margin-top: -43px;
+
+  border-radius: 35px;
+
+  max-width: 730px;
+}
+
+form h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #0e8730;
+}
+
+form fieldset {
+  margin-top: 64px;
+
+  border: 0;
+}
+
+form legend {
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+form legend h2 {
+  font-size: 24px;
+}
+
+form legend span {
+  font-size: 14px;
+  color: #6c6c80;
+}
+
+form .field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 24px;
+}
+
+form .field-group {
+  display: flex;
+}
+
+form input,
+form select {
+  background-color: #f0f0f5;
+
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+
+  border-radius: 8px;
+
+  /* outline: none; */
+}
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  color: #6c6c80;
+}
+
+form .field-group .field + .field {
+  margin-left: 24px;
+}
+
+form button {
+  width: 260px;
+  height: 56px;
+
+  background-color: #0e8730;
+  border-radius: 8px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+
+  margin-top: 40px;
+
+  transition: background-color 400ms;
+
+  margin-left: 25px;
+}
+
+form button:hover {
+  background-color: #2fb86e;
+}

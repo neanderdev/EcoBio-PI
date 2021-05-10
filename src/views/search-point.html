@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-point" %}
+
+{% block title %}
+    <title>Localizar Ponto - ECOBIO</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-point.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+        <header>
+            <img src="/assets/logo.svg" alt="Logomarca">
+            <a href="/">  
+                <span></span>     
+                Voltar para Home                    
+            </a> 
+        </header>
+
+        <main>
+            <p>Pesquise sua Cidade, para ver se tem um ponto de coleta nela.</p>
+    
+            <form action="/search">
+                <div class="search field">
+                    <input 
+                        type="text" 
+                        name="search"
+                        placeholder="Pesquise por cidade"
+                    >
+                    <button>
+                        <img src="/assets/search.svg" alt="Buscar">
+                    </button>
+                </div>
+            </form>
+        
+        </main>
+    </div>
+{% endblock content%}

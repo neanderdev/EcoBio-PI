@@ -1,0 +1,92 @@
+#page-search-point {
+  height: 100vh;
+
+  background: url("/assets/background-person.svg") no-repeat;
+  background-position: 59vw bottom;
+  background-color: #f0f0f5;
+}
+
+#page-search-point .content {
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-search-point header {
+  margin-top: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page-search-point header a {
+  display: flex;
+
+  color: #322153;
+  font-weight: 700;
+}
+
+#page-search-point header a span {
+  margin-right: 16px;
+  display: flex;
+
+  background-image: url("/assets/arrow-left.svg");
+
+  width: 20px;
+  height: 20px;
+}
+
+#page-search-point main {
+  max-width: 560px;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-search-point main p {
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 24px;
+  color: #322153;
+}
+
+#page-search-point main form .field {
+  display: flex;
+}
+
+#page-search-point main form input {
+  flex: 1;
+
+  background-color: #d9d9ff;
+
+  border-radius: 8px 0 0 8px;
+  border: 0;
+
+  padding: 16px 24px;
+
+  font-size: 16px;
+  color: #6c6c80;
+}
+
+#page-search-point main form button {
+  width: 72px;
+  height: 72px;
+
+  background-color: var(--primary-color);
+
+  border: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+#page-search-point main form button:hover {
+  background-color: #2fb85e;
+}

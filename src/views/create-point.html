@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-create-point" %}
+
+{% block title %}
+    <title>Criar um ponto de coleta</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+    <div id="page-create-point">
+        <ul class="barra_superior">
+            <div class="flex">
+                <img src="/assets/logo.svg"> 
+            </div>    
+        </ul>
+
+        <form action="/savepoint" method="POST">
+            <h1>Cadastro do ponto de coleta</h1>
+
+            <fieldset>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="name">Nome da entidade</label>
+                        <input type="text" name="name" required="required">
+                    </div>
+                </div>
+    
+                <div class="field-group">
+                    <div class="field">
+                        <label for="address">Endereço</label>
+                        <input type="text" name="address" required="required">
+                    </div>
+                    <div class="field">
+                        <label for="address2">Número/Complemento</label>
+                        <input type="text" name="address2" required="required">
+                    </div>
+                </div>
+    
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <select name="uf" required="required">
+                            <option value="">Selecione o Estado</option>
+                        </select>
+    
+                        <input type="hidden" name="state">
+                    </div>
+    
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled="disabled" required="required">
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="contact">Telefone de Contato</label>
+                        <input type="text" name="contact" placeholder="Ex: 17 99999-9999" required="required">
+                    </div>
+                    <div class="field">
+                        <label for="name">Imagem da entidade</label>
+                        <input 
+                            type="url" 
+                            name="image" 
+                            placeholder="http://"
+                            required="required">
+                    </div>                    
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="description">Descrição</label>
+                        <input type="text" name="description" required="required">
+                    </div>                 
+                </div>                
+    
+            </fieldset>
+            
+            <img class="imgdog" src="/assets/dog.svg" alt="Dog">
+            <button type="submit" class="buttonCad">Cadastrar ponto</button>
+        </form>  
+    </div>
+
+    <div class="flex">
+        <a href="/"><img src="/assets/voltar.svg" alt="Voltar"></a>
+    </div>
+{% endblock content%}
+
+
+{% block modal %}
+    {% if saved %}
+        {%include "partials/point-created.html"%}
+    {% endif %}
+{% endblock modal %}
+
+
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}
