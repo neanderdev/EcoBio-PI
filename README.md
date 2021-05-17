@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Você pode visualizar o layout do projeto através [desse link](<https://www.figma.com/file/U79jIGOAvMWcoF4q6CozU5/Ecobio>). Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
 
-## ☁️ Visão do projeto
+## 👀 Visão do projeto
 
 Neste projeto por ser o primeiro semestre na faculdade, tivemos algumas dificuldades, mas conseguimos entregar o projeto muito antes do prazo, e a comunicação e o trabalho em grupo foi essencial nestre Projeto Integrador(PI), e o agradecimento ao Professor Wendel.
 
